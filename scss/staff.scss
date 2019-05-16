@@ -1,0 +1,117 @@
+
+.image {
+  width: 100%;
+  transition-timing-function: ease-in-out;
+  transition: 0.3s;
+}
+
+.staff__item:hover {
+  .image {
+    transform: scaleX(0);
+  }
+  .staff__info {
+    opacity: 1;
+  }
+  .staff__nafn, .staff__lysing {
+    transition-delay: 0.2s;
+    transform: scaleX(1);
+  }
+}
+
+.staff {
+  position: relative;
+}
+
+.staff__info {
+  transition-timing-function: ease-in-out;
+  display: flex;
+  align-self: center;
+  flex-direction: column;
+  transition: 0.3s;
+  opacity: 0;
+  position: absolute;
+  padding: 15px;
+}
+
+.staff__nafn {
+  display: flex;
+  align-self: center;
+  text-align: center;
+  font-size: 8vw;
+  font-weight: bold;
+  padding-bottom: 30px;
+  transform: scaleX(0);
+  transition: 0.3s;
+  transition-timing-function: ease-in-out;
+}
+
+.staff__lysing {
+  display: flex;
+  align-self: center;
+  text-align: center;
+  font-size: 4vw;
+  transform: scaleX(0);
+  transition: 0.3s;
+  transition-timing-function: ease-in-out;
+}
+
+.staff {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-content: center;
+  margin-left: -($gutter/2);
+  margin-right: -($gutter/2);
+}
+
+.staff__item {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 100%;
+  padding-right: ($gutter/2);
+  padding-left: ($gutter/2);
+  margin-bottom: $gutter;
+}
+
+/* FOOTER */
+
+/* MEDIA QUERIES */
+@media (min-width: 500px) {
+  .staff__item {
+    width: 50%;
+  }
+  .staff__lysing {
+    font-size: 2vw;
+  }
+  .staff__nafn {
+    font-size: 4vw;
+  }
+  .staff__info {
+    width: 50vw;
+  }
+}
+
+@media (min-width: 504px) {
+  .vorur__item {
+    width: 50%;
+  }
+  .btn {
+    width: 80%;
+  }
+}
+
+@media (min-width: 810px) {
+  .vorur__item {
+    width: 33.33%;
+  }
+  .btn {
+    width: 70%;
+  }
+}
+
+@media (min-width: 570px) {
+  .header__undirsíður {
+    flex-direction: row;
+  }
+}

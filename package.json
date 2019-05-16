@@ -1,0 +1,32 @@
+{
+  "name": "vefforritun_hopaverkefni1",
+  "version": "1.0.0",
+  "description": "Hopverkefni 1",
+  "main": "run.js",
+  "scripts": {
+    "sass": "node-sass styles.scss styles.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Bragiar/Vefforritun_Hopaverkefni1.git"
+  },
+  "keywords": [
+    "hopverkefni",
+    "bragi",
+    "arni",
+    "addi"
+  ],
+  "author": "Árni Freyr Magnusson",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Bragiar/Vefforritun_Hopaverkefni1/issues"
+  },
+  "homepage": "https://github.com/Bragiar/Vefforritun_Hopaverkefni1#readme",
+  "dependencies": {
+    "browser-sync": "^2.26.3",
+    "node-sass": "^4.9.4",
+    "postcss": "^7.0.5",
+    "sass-map": "^0.3.4",
+    "sass-watch": "^0.1.0"
+  }
+}

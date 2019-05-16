@@ -1,0 +1,86 @@
+h2 {
+  padding: 3rem 0 1.5rem 0;
+  font-size: 2em;
+  font-family: 'Oswald', sans-serif;
+}
+
+h3 {
+  margin: 1rem 0 0.5rem 0;
+  font-size: 1.25rem;
+  font-family: 'Oswald', sans-serif;
+}
+
+footer {
+  width: 100%;
+  background-color:$pink;
+  a {
+    color:$yellow;
+    text-decoration: none;
+    transition-timing-function: ease-in-out;
+    transition-duration: 0.3s;
+    transition-delay: 0.15s;
+    &:hover {
+      color:$black;
+      text-decoration: none;
+    }
+  }
+  p {
+    padding-top: 0.5rem;
+    padding-bottom: 1.5rem;
+    font-size: 0.75rem;
+    text-align: center;
+  }
+}
+
+.footer {
+  margin: 0 auto;
+  max-width: 1240px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.footer__undirsíður {
+  font-size: 1rem;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-left: -10px;
+  margin-right: -10px;
+}
+
+.footer__header {
+  text-align: start;
+}
+
+.footer__undirsíður__links {
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: 0 10px;
+  width: 50%;
+  display: flex;
+}
+
+.footer__hofundarettur {
+  font-size: 0.75rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  text-align: center;
+}
+
+ul {
+  color: $white;
+  font-size: 0.875rem;
+  list-style: none;
+}
+
+li {
+  text-align: left;
+  padding: 0 0 0.5rem 0;
+}
+@media (min-width: 810px) {
+  .footer__undirsíður__links {
+    width: 25%;
+  }
+}

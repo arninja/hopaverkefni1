@@ -1,0 +1,141 @@
+
+/* VÖRURNAR */
+
+.vorur {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-content: center;
+  margin-left: -($gutter/2);
+  margin-right: -($gutter/2);
+}
+
+.vorur__item {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding-right: ($gutter/2);;
+  padding-left: ($gutter/2);
+  margin-bottom: $gutter;
+}
+
+.image, .vorur__mynd {
+  width: 100%;
+}
+
+.vorur__lysing {
+  height: 100%;
+}
+
+.vorur__lysingTitle {
+  margin: $gutter 0;
+}
+
+.vorur__lysingBody {
+  height: (2*$gutter);
+}
+
+.vorur__lysingPrice {
+  font-size: 2em;
+  font-weight: bold;
+  margin: $gutter 0;
+}
+
+.vorur__footer__fjoldi {
+  width: 65%;
+  margin-right: 10px;
+  border-radius: 2px;
+  border: solid 1px grey;
+  font-size: 1em;
+  padding-left: 5px;
+}
+
+.vorur__footer {
+  display: flex;
+  flex-direction: row;
+  margin-top: auto;
+}
+
+.btn {
+  border-radius: 2px;
+  font-size: 15px;
+  padding: 5px;
+  width: 35%;
+  border: solid 1px grey;
+  transition-timing-function: ease-in-out;
+  transition-duration: 0.3s;
+  &:hover {
+    background-color: $pink;
+  }
+  .karfaIcon {
+    float: left;
+    width: $gutter;
+    margin-right: 5px;
+  }
+}
+
+.vorur__footer {
+  align-items: bottom;
+}
+
+/* FOOTER */
+
+/* Media queries */
+
+@media (min-width: 504px) {
+  .vorur__item {
+    width: 50%;
+  }
+  .btn {
+    width: 80%;
+  }
+}
+
+@media (min-width: 810px) {
+  .vorur__item {
+    width: 33.33%;
+  }
+  .btn {
+    width: 70%;
+  }
+}
+
+@media (min-width: 540px) {
+  .btn {
+    width: 70%;
+  }
+}
+
+@media (min-width: 610px) {
+  .btn {
+    width: 70%;
+  }
+}
+
+@media (min-width: 920px) {
+  .btn {
+    width: 50%;
+  }
+}
+
+@media (min-width: 1120px) {
+  .btn {
+    width: 35%;
+  }
+}
+
+@media (min-width: 570px) {
+  .header__undirsíður {
+    flex-direction: row;
+  }
+}
+@media (min-width: 500px){
+  .vorur__lysingTitle{
+    font-size: 0.8em;
+  }
+}
+@media (min-width: 550px){
+  .vorur__lysingTitle{
+    font-size: 1em;
+  }
+}
